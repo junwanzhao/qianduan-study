@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>使用CSS3写颜色的渐变效果</title>
+  <style>
+    .box1 {
+      background-image: linear-gradient(to bottom, yellow, red);
+    }
+
+    .box2 {
+      background-image: linear-gradient(to right, yellow, red);
+    }
+
+    .box3 {
+      background-image: linear-gradient(135deg, red, yellow);
+    }
+
+    div {
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      margin-right: 10px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <p><span>上下方向的转变</span><span>左右方向的转变</span><span>对角方向的转变</span></p>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+</body>
+
+</html>

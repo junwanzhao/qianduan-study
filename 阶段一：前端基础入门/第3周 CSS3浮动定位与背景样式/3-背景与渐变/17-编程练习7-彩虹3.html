@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>彩虹3</title>
+  <style>
+    #w {
+      top: 140px;
+      left: 140px;
+      width: 140px;
+      height: 70px;
+      position: fixed;
+      background-color: white;
+      border-radius: 70px 70px 0 0;
+    }
+
+    #a {
+      top: 120px;
+      left: 120px;
+      width: 180px;
+      height: 90px;
+      position: fixed;
+      background-color: red;
+      border-radius: 90px 90px 0 0;
+    }
+
+    #b {
+      top: 100px;
+      left: 100px;
+      width: 220px;
+      height: 110px;
+      position: fixed;
+      background-color: orange;
+      border-radius: 110px 110px 0 0;
+    }
+
+    #c {
+      top: 80px;
+      left: 80px;
+      width: 260px;
+      height: 130px;
+      position: fixed;
+      background-color: yellow;
+      border-radius: 130px 130px 0 0;
+    }
+
+    #d {
+      top: 60px;
+      left: 60px;
+      width: 300px;
+      height: 150px;
+      position: fixed;
+      background-color: green;
+      border-radius: 150px 150px 0 0;
+    }
+
+    #e {
+      top: 40px;
+      left: 40px;
+      width: 340px;
+      height: 170px;
+      position: fixed;
+      background-color: cyan;
+      border-radius: 170px 170px 0 0;
+    }
+
+    #f {
+      top: 20px;
+      left: 20px;
+      width: 380px;
+      height: 190px;
+      position: fixed;
+      background-color: blue;
+      border-radius: 190px 190px 0 0;
+    }
+
+    #g {
+      /*  这两个属性中top的值为负的每个div递减的值，而left的值为负的每次递减的值，
+      因为每个div的宽度长度要不相同才能体现彩虹的分层效果，而彩虹是缺了下半圆的，
+      所有宽需要减两份才能定位到中心点，而高只需要减一份就行了 */
+      top: 0px;
+      left: 0px;
+      /* 最好的长宽比为2:1比较美观 */
+      width: 420px;
+      height: 210px;
+      /* 这个属性是用来给div进行定位使各个div能重合，
+      形成彩虹的层叠效 */
+      position: fixed;
+      background-color: purple;
+      /* 彩虹只有上半圆所有不需要这个属性的后两个值，
+      而前两个的值分别为div宽的一半和div的长度 */
+      border-radius: 210px 210px 0 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div id="g" class="s">
+      <div id="f" class="s">
+        <div id="e" class="s">
+          <div id="d" class="s">
+            <div id="c" class="s">
+              <div id="b" class="s">
+                <div id="a" class="s">
+                  <div id="w" class="s"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
