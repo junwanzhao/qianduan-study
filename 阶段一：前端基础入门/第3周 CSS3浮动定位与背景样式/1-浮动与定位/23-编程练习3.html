@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网页对联广告</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(121, 222, 222);
+    }
+
+    div.left {
+      background-color: lightpink;
+      left: 0;
+      position: fixed;
+      width: 100px;
+      height: 300px;
+      float: left;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    div.right {
+      background-color: lightskyblue;
+      right: 0;
+      position: fixed;
+      width: 100px;
+      height: 300px;
+      float: right;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    div h3 {
+      color: white;
+      text-align: center;
+      padding-bottom: 8px;
+    }
+
+    div div {
+      width: 90px;
+      height: 2px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      line-height: 100px;
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="left">
+    <h3>Web</h3>
+    <h3>前端工程师</h3>
+    <div></div>
+  </div>
+  <div class="right">
+    <h3>Java</h3>
+    <h3>工程师</h3>
+    <div></div>
+  </div>
+</body>
+
+</html>
