@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>旋转变形</title>
+  <style>
+    .container {
+      width: 70%;
+      margin: 100px auto;
+      background-color: #9ed4d9;
+      text-align: center;
+    }
+
+    img {
+      border: 1px solid #333;
+      width: 300px;
+      height: 150px;
+    }
+
+    .pic1 {
+      transform: rotate(30deg);
+    }
+
+    .pic2 {
+      transform: rotate(60deg);
+    }
+
+    .pic3 {
+      transform: rotate(90deg);
+    }
+
+    .pic4 {
+      transform: rotate(180deg);
+    }
+
+    .pic5 {
+      transform: rotate(369deg);
+    }
+
+    .pic6 {
+      /* 以左上角为中心点进行旋转 */
+      transform-origin: 0 0;
+      transform: rotate(30deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <p><img src="../images/莉雅.jpg" alt="" class="pic1"></p>
+    <p><img src="../images/莉雅.jpg" alt="" class="pic2"></p>
+    <p><img src="../images/莉雅.jpg" alt="" class="pic3"></p>
+    <p><img src="../images/莉雅.jpg" alt="" class="pic4"></p>
+    <p><img src="../images/莉雅.jpg" alt="" class="pic5"></p>
+    <p><img src="../images/莉雅.jpg" alt="" class="pic6"></p>
+  </div>
+</body>
+
+</html>
