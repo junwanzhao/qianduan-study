@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>心动效果</title>
+  <style>
+    div {
+      width: 88px;
+      height: 81px;
+      background-image: url(../images/xin.png);
+      margin: 0 auto;
+    }
+
+    .pa {
+      position: relative;
+    }
+
+    .son {
+      position: absolute;
+      opacity: 1;
+      animation: heart 1s linear 0s infinite;
+    }
+
+    @keyframes heart {
+      100% {
+        opacity: 0;
+        transform: scale(2);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pa">
+    <div class="son"></div>
+  </div>
+</body>
+
+</html>
