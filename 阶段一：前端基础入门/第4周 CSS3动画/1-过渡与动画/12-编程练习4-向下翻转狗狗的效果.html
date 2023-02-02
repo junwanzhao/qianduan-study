@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>向下翻转狗狗的效果</title>
+  <style>
+    .box{
+      width: 200px;
+      position: relative;
+    }
+    .box img{
+      width: 200px;
+      border: 1px solid #333;
+      border-radius: 50%;
+    }
+    .box img.dog{
+      position: absolute;
+      transform-origin: 0 100%;
+      transition: transform 1s ease 0s;
+    }
+    .box:hover img.dog{
+      transform: rotateX(180deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <img src="../images/dog.jpg" alt="" class="dog">
+    <img src="../images/cat.jpg" alt="">
+  </div>
+</body>
+</html>
