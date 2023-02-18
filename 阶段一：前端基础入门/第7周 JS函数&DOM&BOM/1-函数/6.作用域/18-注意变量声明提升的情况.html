@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>注意变量声明提升的情况</title>
+</head>
+
+<body>
+  <script>
+    var m = 1;
+    function fun() {
+      m++;
+      var m = 4;
+      console.log(m);
+    }
+
+    fun();
+    console.log(m);
+
+  </script>
+</body>
+
+</html>
