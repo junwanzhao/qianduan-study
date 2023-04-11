@@ -35,14 +35,12 @@
       // 阻止默认事件：就是说当用户在盒子里面滚动添加鼠标滚轮的时候，此时不会引发页面进度条的滚动
       e.preventDefault();
 
-
       if (e.deltaY > 0) {
         a++;
       } else {
         a--;
       }
       oInfo.innerText = a;
-
     }
   </script>
 </body>

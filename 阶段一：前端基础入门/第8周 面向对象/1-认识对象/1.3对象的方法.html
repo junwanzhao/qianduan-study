@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>对象的方法</title>
+</head>
+
+<body>
+  <script>
+    var xiaoming = {
+      namw: '小明',
+      sge: 12,
+      sex: '男',
+      sayHello: function () {
+        console.log('你好我是小明,我今年12岁了,我是一个男生');
+      },
+      sleep: function () {
+        console.log('小明开始睡觉zzzzzzz');
+      }
+    };
+
+    var xiaohong = {
+      name: '小红',
+      age: 11,
+      sex: '女',
+      sayHello: function () {
+        console.log('你好我是小红,我11岁了,我是一个女生');
+      },
+      sleep: function () {
+        console.log('小红开始睡觉zzzzzz');
+
+      }
+    };
+    xiaoming.sayHello();
+    xiaoming.sleep();
+    xiaohong.sayHello();
+    xiaohong.sleep();
+  </script>
+</body>
+
+</html>

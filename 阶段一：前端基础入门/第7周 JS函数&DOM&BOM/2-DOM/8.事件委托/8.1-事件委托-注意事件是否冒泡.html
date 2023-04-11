@@ -19,6 +19,7 @@
   <script>
     var oList = document.getElementById('list');
     var oBtn = document.getElementById('btn');
+
     // onmouseenter这个属性天生就是"不冒泡"的，相当于你事件处理函数附加给了那个DOM节点
     // 就是哪个DOM节点自己触发的事件，没有冒泡过程
     oList.onmouseover = function (e) {
